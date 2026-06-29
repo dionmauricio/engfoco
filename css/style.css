@@ -618,25 +618,41 @@ h6 {
 
 .project-item {
   background: var(--white);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.02);
+  border-radius: 12px;
   overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 151, 178, 0.15), 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 .project-item__header {
   background-color: var(--primary);
   color: var(--white);
-  padding: 15px 30px;
+  padding: 18px 30px;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.05rem;
   letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+.project-item:hover .project-item__header {
+  background-color: var(--primary-dark);
 }
 
 .project-item__image {
   width: 100%;
   height: auto;
   display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-item:hover .project-item__image {
+  transform: scale(1.02);
 }
 
 /* ---------- Footer ---------- */
