@@ -6,14 +6,14 @@
 /* ---------- CSS Custom Properties ---------- */
 :root {
   /* Primary Colors */
-  --primary: #0097b2;
-  --primary-dark: #006374;
-  --primary-light: #00d8ff;
+  --primary: #021c3d;
+  --primary-dark: #011126;
+  --primary-light: #1b4f8f;
 
   /* Secondary Colors */
-  --secondary: #85e7ec;
-  --secondary-dark: #286b6e;
-  --secondary-light: #52f8ff;
+  --secondary: #4fc3f7;
+  --secondary-dark: #0b4c96;
+  --secondary-light: #80d8ff;
 
   /* Neutrals */
   --black: #000000;
@@ -640,7 +640,7 @@ h6 {
 
 .project-item:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0, 151, 178, 0.15), 0 1px 3px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 20px 40px rgba(2, 28, 61, 0.15), 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 .project-item__header {
@@ -671,7 +671,7 @@ h6 {
 
 /* ---------- Footer ---------- */
 .footer {
-  background-color: #2d2d2d;
+  background-color: #010c1a;
   color: var(--white);
   padding: 60px 0 25px;
   margin-top: 62px;
@@ -691,15 +691,16 @@ h6 {
 }
 
 .footer__title {
-  color: var(--primary);
+  color: var(--secondary);
   font-size: 1.15rem;
   text-transform: uppercase;
   margin-bottom: 20px;
   font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .footer__text {
-  color: #ccc;
+  color: #a0aec0;
   font-size: 0.9rem;
   line-height: 1.7;
   margin-bottom: 10px;
@@ -710,25 +711,25 @@ h6 {
 }
 
 .footer__list a {
-  color: #ccc;
+  color: #a0aec0;
   font-size: 0.9rem;
   transition: color 0.3s ease;
 }
 
 .footer__list a:hover {
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 .footer__list .footer__contact-item {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #ccc;
+  color: #a0aec0;
   font-size: 0.9rem;
 }
 
 .footer__list .footer__contact-item i {
-  color: var(--primary);
+  color: var(--secondary);
   width: 16px;
   text-align: center;
 }
@@ -737,9 +738,9 @@ h6 {
   text-align: center;
   padding-top: 25px;
   margin-top: 30px;
-  border-top: 1px solid #444;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   font-size: 0.85rem;
-  color: #888;
+  color: #718096;
 }
 
 /* ---------- WhatsApp Floating Button ---------- */
@@ -1055,13 +1056,13 @@ h6 {
     background-color 0.3s ease,
     transform 0.3s ease,
     box-shadow 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 151, 178, 0.3);
+  box-shadow: 0 4px 15px rgba(2, 28, 61, 0.3);
 }
 
 .nr-contact-btn:hover {
   background-color: var(--primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 151, 178, 0.4);
+  box-shadow: 0 6px 20px rgba(2, 28, 61, 0.4);
   color: var(--white);
 }
 
@@ -1093,7 +1094,7 @@ h6 {
 
 .nr-grid-item:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 35px rgba(0, 151, 178, 0.2);
+  box-shadow: 0 10px 35px rgba(2, 28, 61, 0.2);
 }
 
 .nr-grid-item__diamond {
