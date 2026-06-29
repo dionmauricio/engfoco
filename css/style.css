@@ -373,7 +373,16 @@ h6 {
   min-height: 400px;
   max-width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.02);
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--white);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.two-col:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 .two-col--reverse {
@@ -381,7 +390,7 @@ h6 {
 }
 
 .two-col__text {
-  flex: 1;
+  flex: 1.25;
   padding: 60px 50px;
   display: flex;
   flex-direction: column;
@@ -396,10 +405,15 @@ h6 {
 }
 
 .two-col__image {
-  flex: 1;
+  flex: 0.75;
   min-height: 400px;
   background-size: cover;
   background-position: center;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.two-col:hover .two-col__image {
+  transform: scale(1.03);
 }
 
 .two-col--teal {
@@ -1327,6 +1341,13 @@ h6 {
 }
 
 /* ---------- Responsive ---------- */
+@media (max-width: 1240px) {
+  .two-col {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 @media (max-width: 992px) {
   .two-col {
     flex-direction: column;
