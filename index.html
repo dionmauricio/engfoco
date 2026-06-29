@@ -1,348 +1,276 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="EngFoco - Projetos e Serviços de Engenharia em Parauapebas, PA. Excelência técnica em projetos estruturais, mecânicos e civis."
-    />
-    <meta
-      name="keywords"
-      content="engenharia, projetos estruturais, construção civil, Parauapebas, engenharia mecânica, consultoria"
-    />
-    <meta name="author" content="EngFoco" />
-    <meta name="robots" content="index, follow" />
 
-    <title>ENGFOCO | Projetos e Serviços de Engenharia</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="EngFoco - Projetos e Serviços de Engenharia em Parauapebas, PA. Excelência técnica em projetos estruturais, mecânicos e civis." />
+  <meta name="keywords"
+    content="engenharia, projetos estruturais, construção civil, Parauapebas, engenharia mecânica, consultoria" />
+  <meta name="author" content="EngFoco" />
+  <meta name="robots" content="index, follow" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://engfoco.com.br/" />
+  <title>ENGFOCO | Projetos e Serviços de Engenharia</title>
 
-    <!-- Open Graph -->
-    <meta
-      property="og:title"
-      content="EngFoco | Projetos e Serviços de Engenharia"
-    />
-    <meta
-      property="og:description"
-      content="Engenharia com foco em excelência técnica e confiança. Projetos estruturais, mecânicos e civis em Parauapebas, PA."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://engfoco.com.br/" />
-    <meta property="og:image" content="img/logo/logo.png" />
+  <!-- Canonical -->
+  <link rel="canonical" href="https://engfoco.com.br/" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="img/logo/logo.png" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="EngFoco | Projetos e Serviços de Engenharia" />
+  <meta property="og:description"
+    content="Engenharia com foco em excelência técnica e confiança. Projetos estruturais, mecânicos e civis em Parauapebas, PA." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://engfoco.com.br/" />
+  <meta property="og:image" content="img/logo/logo.png" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/logo/logo.png" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css?v=1" />
-  </head>
-  <body>
-    <!-- Fixed Top Bar -->
-    <div class="top-bar" role="banner">
-      <div class="container">
-        <div class="top-bar__left">
-          <span class="top-bar__item">
-            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-            Parauapebas - PA
-          </span>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css?v=1" />
+</head>
+
+<body>
+  <!-- Fixed Top Bar -->
+  <div class="top-bar" role="banner">
+    <div class="container">
+      <div class="top-bar__left">
+        <span class="top-bar__item">
+          <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+          Parauapebas - PA
+        </span>
+      </div>
+      <div class="top-bar__right">
+        <a href="mailto:comercial@engfoco.com.br" class="top-bar__item">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+          comercial@engfoco.com.br
+        </a>
+        <a href="https://wa.me/5594991189447" target="_blank" rel="noopener" class="top-bar__item">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+          + 55 94 99118-9447
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header" role="navigation">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="EngFoco - Página Inicial">
+        <img src="img/logo/logo.png" alt="EngFoco - Projetos e Serviços de Engenharia" width="180" height="55" />
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="projetos.html">Portfólio</a></li>
+          <li class="nav-dropdown">
+            <a href="nrs.html" class="nav-dropdown__toggle">
+              NR's <i class="fas fa-chevron-down nav-dropdown__arrow"></i>
+            </a>
+            <ul class="nav-dropdown__menu">
+              <li><a href="nrs.html?nr=01">NR 01</a></li>
+              <li><a href="nrs.html?nr=04">NR 04</a></li>
+              <li><a href="nrs.html?nr=05">NR 05</a></li>
+              <li><a href="nrs.html?nr=06">NR 06</a></li>
+              <li><a href="nrs.html?nr=09">NR 09</a></li>
+              <li><a href="nrs.html?nr=10">NR 10</a></li>
+              <li><a href="nrs.html?nr=11">NR 11</a></li>
+              <li><a href="nrs.html?nr=12">NR 12</a></li>
+              <li><a href="nrs.html?nr=15">NR 15</a></li>
+              <li><a href="nrs.html?nr=16">NR 16</a></li>
+              <li><a href="nrs.html?nr=17">NR 17</a></li>
+              <li><a href="nrs.html?nr=18">NR 18</a></li>
+              <li><a href="nrs.html?nr=19">NR 19</a></li>
+              <li><a href="nrs.html?nr=20">NR 20</a></li>
+              <li><a href="nrs.html?nr=22">NR 22</a></li>
+              <li><a href="nrs.html?nr=23">NR 23</a></li>
+              <li><a href="nrs.html?nr=33">NR 33</a></li>
+              <li><a href="nrs.html?nr=35">NR 35</a></li>
+              <li><a href="nrs.html?nr=38">NR 38</a></li>
+            </ul>
+          </li>
+          <li><a href="energia-solar.html">Energia Solar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" aria-label="Banner principal">
+    <img src="img/plano_de_fundo/bg_inicio.png" alt="" class="hero__bg" loading="eager" />
+
+    <div class="hero__content">
+      <div class="hero__boxes">
+        <div class="hero__title-box">
+          <h1>Conheça Nossa Empresa</h1>
         </div>
-        <div class="top-bar__right">
-          <a href="mailto:comercial@engfoco.com.br" class="top-bar__item">
-            <i class="fas fa-envelope" aria-hidden="true"></i>
-            comercial@engfoco.com.br
-          </a>
-          <a
-            href="https://wa.me/5594991189447"
-            target="_blank"
-            rel="noopener"
-            class="top-bar__item"
-          >
-            <i class="fab fa-whatsapp" aria-hidden="true"></i>
-            + 55 94 99118-9447
-          </a>
+        <div class="hero__subtitle-box">
+          <p>Engenharia com foco em excelência técnica e confiança.</p>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Header -->
-    <header class="main-header" role="navigation">
-      <div class="container">
-        <a href="index.html" class="logo" aria-label="EngFoco - Página Inicial">
-          <img
-            src="img/logo/logo.png"
-            alt="EngFoco - Projetos e Serviços de Engenharia"
-            width="180"
-            height="55"
-          />
-        </a>
-        <button
-          class="menu-toggle"
-          aria-label="Abrir menu de navegação"
-          aria-expanded="false"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-        <nav class="main-nav" aria-label="Navegação principal">
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="projetos.html">Portfólio</a></li>
-            <li class="nav-dropdown">
-              <a href="nrs.html" class="nav-dropdown__toggle">
-                NR's <i class="fas fa-chevron-down nav-dropdown__arrow"></i>
-              </a>
-              <ul class="nav-dropdown__menu">
-                <li><a href="nrs.html?nr=01">NR 01</a></li>
-                <li><a href="nrs.html?nr=04">NR 04</a></li>
-                <li><a href="nrs.html?nr=05">NR 05</a></li>
-                <li><a href="nrs.html?nr=06">NR 06</a></li>
-                <li><a href="nrs.html?nr=09">NR 09</a></li>
-                <li><a href="nrs.html?nr=10">NR 10</a></li>
-                <li><a href="nrs.html?nr=11">NR 11</a></li>
-                <li><a href="nrs.html?nr=12">NR 12</a></li>
-                <li><a href="nrs.html?nr=15">NR 15</a></li>
-                <li><a href="nrs.html?nr=16">NR 16</a></li>
-                <li><a href="nrs.html?nr=17">NR 17</a></li>
-                <li><a href="nrs.html?nr=18">NR 18</a></li>
-                <li><a href="nrs.html?nr=19">NR 19</a></li>
-                <li><a href="nrs.html?nr=20">NR 20</a></li>
-                <li><a href="nrs.html?nr=22">NR 22</a></li>
-                <li><a href="nrs.html?nr=23">NR 23</a></li>
-                <li><a href="nrs.html?nr=33">NR 33</a></li>
-                <li><a href="nrs.html?nr=35">NR 35</a></li>
-                <li><a href="nrs.html?nr=38">NR 38</a></li>
-              </ul>
-            </li>
-            <li><a href="energia-solar.html">Energia Solar</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" aria-label="Banner principal">
-      <img
-        src="img/plano_de_fundo/bg_inicio.png"
-        alt=""
-        class="hero__bg"
-        loading="eager"
-      />
-
-      <div class="hero__content">
-        <div class="hero__boxes">
-          <div class="hero__title-box">
-            <h1>Conheça Nossa Empresa</h1>
-          </div>
-          <div class="hero__subtitle-box">
-            <p>Engenharia com foco em excelência técnica e confiança.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Teaser -->
-    <section class="section" id="sobre-teaser">
-      <div class="container">
-        <h2 class="section-title">Sobre a EngFoco</h2>
-        <p
-          style="
-            max-width: 800px;
+  <!-- About Teaser -->
+  <section class="section" id="sobre-teaser">
+    <div class="container">
+      <h2 class="section-title">Sobre a EngFoco</h2>
+      <p style="
+            max-width: 1280px;
             font-size: 1.05rem;
             line-height: 1.8;
             color: var(--text-light);
-          "
-        >
-          Fundada em 2021, a ENGFOCO é uma empresa especializada em projetos de
-          engenharia, com sede em Parauapebas/PA, atuando em soluções completas
-          para o desenvolvimento, planejamento e detalhamento técnico de
-          empreendimentos de diversos portes.
-        </p>
-        <a href="sobre.html" class="btn-cta" style="margin-top: 30px">
-          Saiba Mais <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
-    </section>
+          ">
+        Fundada em 2021 e sediada em Parauapebas/PA, a ENGFOCO é uma empresa de engenharia dedicada ao desenvolvimento
+        de soluções técnicas completas para empreendimentos residenciais, comerciais, industriais e de infraestrutura.
+        Atuamos com excelência na elaboração de projetos, planejamento, gerenciamento, consultoria técnica e
+        acompanhamento de obras, oferecendo serviços que unem segurança, eficiência e inovação.
+      </p>
+      <a href="sobre.html" class="btn-cta" style="margin-top: 30px">
+        Saiba Mais <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
 
-    <!-- Services Teaser -->
-    <section class="section section--teal" id="servicos-teaser">
-      <div class="container">
-        <h2 class="section-title section-title--white">Nossos Serviços</h2>
-        <div class="cards-grid">
-          <div
-            class="card card--teal-bg"
-            style="border: 1px solid rgba(255, 255, 255, 0.2)"
-          >
-            <div class="card__icon">
-              <i class="fas fa-drafting-compass"></i>
-            </div>
-            <h3 class="card__title">Projetos Estruturais</h3>
-            <p class="card__text">
-              Projetos em concreto armado, estruturas metálicas e fundações.
-            </p>
+  <!-- Services Teaser -->
+  <section class="section section--teal" id="servicos-teaser">
+    <div class="container">
+      <h2 class="section-title section-title--white">Nossos Serviços</h2>
+      <div class="cards-grid">
+        <div class="card card--teal-bg" style="border: 1px solid rgba(255, 255, 255, 0.2)">
+          <div class="card__icon">
+            <i class="fas fa-drafting-compass"></i>
           </div>
-          <div
-            class="card card--teal-bg"
-            style="border: 1px solid rgba(255, 255, 255, 0.2)"
-          >
-            <div class="card__icon"><i class="fas fa-hard-hat"></i></div>
-            <h3 class="card__title">Execução de Obras</h3>
-            <p class="card__text">
-              Acompanhamento e execução com rigor técnico e segurança.
-            </p>
-          </div>
-          <div
-            class="card card--teal-bg"
-            style="border: 1px solid rgba(255, 255, 255, 0.2)"
-          >
-            <div class="card__icon"><i class="fas fa-cogs"></i></div>
-            <h3 class="card__title">Consultoria Técnica</h3>
-            <p class="card__text">
-              Laudos, pareceres e consultoria em engenharia.
-            </p>
-          </div>
-        </div>
-        <div style="text-align: center; margin-top: 40px">
-          <a
-            href="servicos.html"
-            class="btn-cta"
-            style="background-color: var(--white); color: var(--primary)"
-          >
-            Ver Todos os Serviços <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Teaser -->
-    <section class="section" id="projetos-teaser">
-      <div class="container">
-        <h2 class="section-title">Projetos em Destaque</h2>
-        <div class="cards-grid" style="grid-template-columns: repeat(3, 1fr)">
-          <div class="project-item">
-            <div class="project-item__header">Base PIPE RACK</div>
-            <img
-              src="img/projetos/Base-PIPE_RACK.png"
-              alt="Projeto Base PIPE RACK"
-              class="project-item__image"
-              loading="lazy"
-            />
-          </div>
-          <div class="project-item">
-            <div class="project-item__header">Britagem - Planta Piloto</div>
-            <img
-              src="img/projetos/Britagem-Planta_Piloto.png"
-              alt="Projeto Britagem Planta Piloto"
-              class="project-item__image"
-              loading="lazy"
-            />
-          </div>
-          <div class="project-item">
-            <div class="project-item__header">Galpão - Montagem</div>
-            <img
-              src="img/projetos/Galpao-Conjunto_de_Montagem.png"
-              alt="Projeto Galpão Conjunto de Montagem"
-              class="project-item__image"
-              loading="lazy"
-            />
-          </div>
-        </div>
-        <div style="text-align: center; margin-top: 40px">
-          <a href="projetos.html" class="btn-cta"
-            >Ver Todos os Projetos <i class="fas fa-arrow-right"></i
-          ></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer" id="contato" role="contentinfo">
-      <div class="container">
-        <div class="footer__section">
-          <h3 class="footer__title">EngFoco</h3>
-          <p class="footer__text">
-            Excelência e inovação em projetos de engenharia. Transformando
-            ideias em estruturas sólidas e confiáveis.
+          <h3 class="card__title">Projetos Estruturais</h3>
+          <p class="card__text">
+            Projetos em concreto armado, estruturas metálicas e fundações.
           </p>
         </div>
-        <div class="footer__section">
-          <h3 class="footer__title">Contato</h3>
-          <ul class="footer__list">
-            <li class="footer__contact-item">
-              <i class="fas fa-map-marker-alt"></i> Parauapebas - PA
-            </li>
-            <li class="footer__contact-item">
-              <i class="fas fa-envelope"></i>
-              <a href="mailto:comercial@engfoco.com.br"
-                >comercial@engfoco.com.br</a
-              >
-            </li>
-            <li class="footer__contact-item">
-              <i class="fab fa-whatsapp"></i>
-              <a
-                href="https://wa.me/5594991189447"
-                target="_blank"
-                rel="noopener"
-                >+ 55 94 99118-9447</a
-              >
-            </li>
-          </ul>
+        <div class="card card--teal-bg" style="border: 1px solid rgba(255, 255, 255, 0.2)">
+          <div class="card__icon"><i class="fas fa-hard-hat"></i></div>
+          <h3 class="card__title">Execução de Obras</h3>
+          <p class="card__text">
+            Acompanhamento e execução com rigor técnico e segurança.
+          </p>
         </div>
-        <div class="footer__section">
-          <h3 class="footer__title">Links Rápidos</h3>
-          <ul class="footer__list">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="projetos.html">Portfólio</a></li>
-            <li><a href="nrs.html">NR's</a></li>
-            <li><a href="energia-solar.html">Energia Solar</a></li>
-          </ul>
+        <div class="card card--teal-bg" style="border: 1px solid rgba(255, 255, 255, 0.2)">
+          <div class="card__icon"><i class="fas fa-cogs"></i></div>
+          <h3 class="card__title">Consultoria Técnica</h3>
+          <p class="card__text">
+            Laudos, pareceres e consultoria em engenharia.
+          </p>
         </div>
       </div>
-      <div class="footer__bottom">
-        <p>
-          &copy; 2026
-          <a href="https://mdsinfosoftware.com/">MDS Info Software</a> -
-          Projetando, codificando e conectando soluções
-        </p>
-        <p>
-          <a href="mailto:comercial@mdsinfosoftware.com">Contate o Webmaster</a>
-        </p>
-        <p>
-          <a href="https://wa.me/5594992191629">Cel/WhatsApp</a>
+      <div style="text-align: center; margin-top: 40px">
+        <a href="servicos.html" class="btn-cta" style="background-color: var(--white); color: var(--primary)">
+          Ver Todos os Serviços <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Teaser -->
+  <section class="section" id="projetos-teaser">
+    <div class="container">
+      <h2 class="section-title">Projetos em Destaque</h2>
+      <div class="cards-grid" style="grid-template-columns: repeat(3, 1fr)">
+        <div class="project-item">
+          <div class="project-item__header">Base PIPE RACK</div>
+          <img src="img/projetos/Base-PIPE_RACK.png" alt="Projeto Base PIPE RACK" class="project-item__image"
+            loading="lazy" />
+        </div>
+        <div class="project-item">
+          <div class="project-item__header">Britagem - Planta Piloto</div>
+          <img src="img/projetos/Britagem-Planta_Piloto.png" alt="Projeto Britagem Planta Piloto"
+            class="project-item__image" loading="lazy" />
+        </div>
+        <div class="project-item">
+          <div class="project-item__header">Galpão - Montagem</div>
+          <img src="img/projetos/Galpao-Conjunto_de_Montagem.png" alt="Projeto Galpão Conjunto de Montagem"
+            class="project-item__image" loading="lazy" />
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 40px">
+        <a href="projetos.html" class="btn-cta">Ver Todos os Projetos <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contato" role="contentinfo">
+    <div class="container">
+      <div class="footer__section">
+        <h3 class="footer__title">EngFoco</h3>
+        <p class="footer__text">
+          Excelência e inovação em projetos de engenharia. Transformando
+          ideias em estruturas sólidas e confiáveis.
         </p>
       </div>
-    </footer>
+      <div class="footer__section">
+        <h3 class="footer__title">Contato</h3>
+        <ul class="footer__list">
+          <li class="footer__contact-item">
+            <i class="fas fa-map-marker-alt"></i> Parauapebas - PA
+          </li>
+          <li class="footer__contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:comercial@engfoco.com.br">comercial@engfoco.com.br</a>
+          </li>
+          <li class="footer__contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/5594991189447" target="_blank" rel="noopener">+ 55 94 99118-9447</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <h3 class="footer__title">Links Rápidos</h3>
+        <ul class="footer__list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="projetos.html">Portfólio</a></li>
+          <li><a href="nrs.html">NR's</a></li>
+          <li><a href="energia-solar.html">Energia Solar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>
+        &copy; 2026
+        <a href="https://mdsinfosoftware.com/">MDS Info Software</a> -
+        Projetando, codificando e conectando soluções
+      </p>
+      <p>
+        <a href="mailto:comercial@mdsinfosoftware.com">Contate o Webmaster</a>
+      </p>
+      <p>
+        <a href="https://wa.me/5594992191629">Cel/WhatsApp</a>
+      </p>
+    </div>
+  </footer>
 
-    <!-- WhatsApp Float -->
-    <a
-      href="https://wa.me/5594991189447"
-      target="_blank"
-      rel="noopener"
-      class="whatsapp-float"
-      aria-label="Contate-nos pelo WhatsApp"
-    >
-      <i class="fab fa-whatsapp"></i>
-    </a>
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/5594991189447" target="_blank" rel="noopener" class="whatsapp-float"
+    aria-label="Contate-nos pelo WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
-    <!-- Scripts -->
-    <script src="js/script.js"></script>
-  </body>
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+
 </html>
