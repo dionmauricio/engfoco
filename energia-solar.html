@@ -98,127 +98,93 @@
       </div>
     </header>
 
-    <!-- Solar Hero -->
-    <section class="solar-hero" aria-label="Energia Solar">
-      <div class="container">
-        <h1>Energia Solar</h1>
-        <p>Energia Solar com Certificação e Garantia</p>
-        <img
-          src="img/energia_solar/01.png"
-          alt="Energia Solar - EngFoco"
-          style="width: 100%; margin: 30px auto 0; border-radius: 8px"
-        />
-      </div>
-    </section>
-
-    <main>
-      <!-- CONTEÚDO PRINCIPAL -->
-      <section class="section solar-content" aria-label="Sobre Energia Solar">
+    <main style="margin-top: calc(var(--topbar-height) + var(--header-height)); display: flex; flex-direction: column; gap: 62px; padding-top: 62px;">
+      <!-- INTRODUÇÃO -->
+      <section class="section" aria-label="Energia Solar Introdução" style="padding-top: 0;">
         <div class="container">
-          <p class="solar-content__intro">
-            Nossos projetos e instalações de energia solar seguem critérios
-            técnicos rigorosos, com profissionais capacitados e atualizados nas
-            melhores práticas do setor. Realizamos estudo de viabilidade,
-            dimensionamento preciso, instalação profissional e acompanhamento
-            técnico pós-implantação.
+          <h1 class="section-title section-title--center" style="font-size: 2.5rem; margin-bottom: 15px;">Energia Solar</h1>
+          <p style="text-align: center; max-width: 800px; margin: 0 auto 30px; font-size: 1.1rem; color: var(--text-light); line-height: 1.8;">
+            Energia Solar com Certificação e Garantia
           </p>
-
-          <h2
-            class="section-title section-title--center"
-            style="margin-bottom: 40px"
-          >
-            Trabalhamos com
-          </h2>
-
-          <div class="solar-features">
-            <div class="solar-feature">
-              <div class="solar-feature__icon">
-                <i class="fas fa-file-contract"></i>
-              </div>
-              <h3 class="solar-feature__title">
-                Conformidade com Normas Técnicas
-              </h3>
-              <p class="solar-feature__text">
-                Todos os projetos seguem rigorosamente as normas técnicas
-                nacionais vigentes.
-              </p>
-            </div>
-            <div class="solar-feature">
-              <div class="solar-feature__icon">
-                <i class="fas fa-file-alt"></i>
-              </div>
-              <h3 class="solar-feature__title">
-                Documentação Técnica Completa
-              </h3>
-              <p class="solar-feature__text">
-                Emissão de toda a documentação técnica necessária para o seu
-                projeto.
-              </p>
-            </div>
-            <div class="solar-feature">
-              <div class="solar-feature__icon">
-                <i class="fas fa-certificate"></i>
-              </div>
-              <h3 class="solar-feature__title">Equipamentos Certificados</h3>
-              <p class="solar-feature__text">
-                Trabalhamos apenas com equipamentos certificados e de alta
-                qualidade.
-              </p>
-            </div>
-            <div class="solar-feature">
-              <div class="solar-feature__icon">
-                <i class="fas fa-search"></i>
-              </div>
-              <h3 class="solar-feature__title">
-                Processos Auditáveis e Rastreáveis
-              </h3>
-              <p class="solar-feature__text">
-                Transparência total com processos auditáveis e rastreáveis em
-                todas as etapas.
-              </p>
-            </div>
-            <div class="solar-feature">
-              <div class="solar-feature__icon">
-                <i class="fas fa-user-graduate"></i>
-              </div>
-              <h3 class="solar-feature__title">
-                Equipe Treinada e Qualificada
-              </h3>
-              <p class="solar-feature__text">
-                Profissionais capacitados e atualizados nas melhores práticas do
-                setor.
-              </p>
-            </div>
+          <div style="max-width: 1000px; margin: 0 auto 40px; text-align: left; font-size: 1.05rem; line-height: 1.8; color: var(--text-light);">
+            <p>
+              Nossos projetos e instalações de energia solar seguem critérios técnicos rigorosos, com profissionais capacitados e atualizados nas melhores práticas do setor. Realizamos estudo de viabilidade, dimensionamento preciso, instalação profissional e acompanhamento técnico pós-implantação.
+            </p>
           </div>
-
-          <div
-            class="two-col two-col--reverse two-col--teal"
-            style="border-radius: 8px; overflow: hidden"
-          >
-            <div class="two-col__text">
-              <h2 class="section-title">Mais que um Serviço</h2>
-              <p>
-                Mais do que entregar um serviço, entregamos segurança jurídica,
-                confiabilidade técnica e retorno sobre investimento.
-              </p>
-              <p>
-                Ao escolher nossa empresa, você conta com uma equipe preparada
-                para transformar seu projeto em um resultado sólido, eficiente e
-                sustentável.
-              </p>
-            </div>
-            <div
-              class="two-col__image"
-              style="
-                background-image: url(&quot;img/energia_solar/02.jpg&quot;);
-                background-size: cover;
-                background-position: center;
-              "
-              role="img"
-              aria-label="Energia Solar"
-            ></div>
+          <div style="max-width: 1000px; margin: 0 auto; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);">
+            <img
+              src="img/energia_solar/01.webp"
+              alt="Instalação de Painéis Solares - EngFoco"
+              style="width: 100%; display: block;"
+              loading="eager"
+            />
           </div>
         </div>
+      </section>
+
+      <!-- TRABALHAMOS COM -->
+      <section class="section section--grey" aria-label="Nossos diferenciais em Energia Solar">
+        <div class="container">
+          <h2 class="section-title section-title--center" style="margin-bottom: 45px;">
+            Trabalhamos com
+          </h2>
+          <div class="cards-grid">
+            <div class="card" style="border: 1px solid rgba(0, 0, 0, 0.03);">
+               <div class="card__icon"><i class="fas fa-file-contract"></i></div>
+               <h3 class="card__title">Conformidade com Normas</h3>
+               <p class="card__text">
+                 Todos os projetos seguem rigorosamente as normas técnicas nacionais vigentes.
+               </p>
+            </div>
+            <div class="card" style="border: 1px solid rgba(0, 0, 0, 0.03);">
+               <div class="card__icon"><i class="fas fa-file-alt"></i></div>
+               <h3 class="card__title">Documentação Completa</h3>
+               <p class="card__text">
+                 Emissão de toda a documentação técnica necessária para a aprovação do seu projeto.
+               </p>
+            </div>
+            <div class="card" style="border: 1px solid rgba(0, 0, 0, 0.03);">
+               <div class="card__icon"><i class="fas fa-certificate"></i></div>
+               <h3 class="card__title">Equipamentos Certificados</h3>
+               <p class="card__text">
+                 Trabalhamos apenas com equipamentos certificados, garantindo alta eficiência e durabilidade.
+               </p>
+            </div>
+            <div class="card" style="border: 1px solid rgba(0, 0, 0, 0.03);">
+               <div class="card__icon"><i class="fas fa-search"></i></div>
+               <h3 class="card__title">Processos Rastreáveis</h3>
+               <p class="card__text">
+                 Transparência total com processos auditáveis e rastreáveis em todas as etapas da obra.
+               </p>
+            </div>
+            <div class="card" style="border: 1px solid rgba(0, 0, 0, 0.03);">
+               <div class="card__icon"><i class="fas fa-user-graduate"></i></div>
+               <h3 class="card__title">Equipe Qualificada</h3>
+               <p class="card__text">
+                 Profissionais capacitados e atualizados constantemente nas melhores práticas do setor.
+               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIS QUE UM SERVIÇO -->
+      <section class="two-col two-col--reverse two-col--teal" aria-label="Diferencial e Compromisso">
+        <div class="two-col__text">
+          <h2 class="section-title">Mais que um Serviço</h2>
+          <p>
+            Mais do que entregar um serviço, entregamos segurança jurídica, confiabilidade técnica e excelente retorno sobre seu investimento.
+          </p>
+          <p>
+            Ao escolher a EngFoco, você conta com uma equipe preparada para transformar seu projeto de energia solar em um resultado sólido, eficiente e sustentável.
+          </p>
+        </div>
+        <div
+          class="two-col__image"
+          style="background-image: url('img/energia_solar/02.webp');"
+          role="img"
+          aria-label="Instalação solar fotovoltaica EngFoco"
+        ></div>
       </section>
 
       <!-- CTA -->
@@ -226,11 +192,10 @@
         <div class="container">
           <h2>Precisa de mais informações?</h2>
           <p>
-            Entre em contato e peça seu orçamento sem compromisso. Nossa equipe
-            está pronta para ajudá-lo a transformar seu projeto em realidade.
+            Entre em contato e peça seu orçamento sem compromisso. Nossa equipe está pronta para ajudá-lo a transformar seu projeto em realidade.
           </p>
           <a
-            href="https://wa.me/5594991189447?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20energia%20solar."
+            href="https://wa.me/5594991189447?text=Olá%2C%20gostaria%20de%20mais%20informações%20sobre%20energia%20solar."
             target="_blank"
             rel="noopener"
             class="btn-cta"
