@@ -222,27 +222,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const whatsappUrl = `https://wa.me/5594991189447?text=${whatsappText}`;
 
     nrContainer.innerHTML = `
-            <section class="nr-page">
-                <div class="container">
-                    <div class="nr-card">
-                        <div class="nr-diamond-wrapper">
-                            <div class="nr-diamond">
-                                <div class="nr-diamond__content">
-                                    <span class="nr-diamond__number">NR ${nr.numero}</span>
-                                    <span class="nr-diamond__subtitle">${nr.titulo}</span>
-                                </div>
+            <section class="nr-page" style="padding: 40px 0 60px; min-height: calc(100vh - var(--header-height) - var(--topbar-height) - 140px); display: flex; align-items: center;">
+                <div class="container" style="max-width: 1080px; width: 100%;">
+                    <div class="nr-grid-item" style="max-width: 100%; height: 72vh; min-height: 576px; max-height: 780px; margin: 0 auto; display: flex; flex-direction: column;">
+                        <a href="nrs.html" class="nr-grid-item__link" style="flex: 1; display: flex; flex-direction: column; overflow: hidden;" title="Voltar para a lista">
+                            <div class="nr-grid-item__image-container" style="flex: 1; height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--primary-dark); aspect-ratio: unset;">
+                                <img src="img/nrs/NR-${nr.numero}.webp" alt="NR ${nr.numero} - ${nr.titulo}" class="nr-grid-item__image" style="width: 100%; height: 100%; object-fit: contain;">
                             </div>
+                        </a>
+                        <div class="nr-grid-item__actions">
+                            <a href="${whatsappUrl}" target="_blank" rel="noopener" class="nr-grid-item__contact-btn">
+                                Entre em Contato <i class="fab fa-whatsapp"></i>
+                            </a>
                         </div>
-                        <div class="nr-text-content">
-                            <div class="nr-text-content__body">
-                                ${nr.conteudo}
-                            </div>
-                            <div class="nr-text-content__action">
-                                <a href="${whatsappUrl}" target="_blank" rel="noopener" class="nr-contact-btn">
-                                    Contate-nos <i class="fab fa-whatsapp"></i>
-                                </a>
-                            </div>
-                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 25px;">
+                        <a href="nrs.html" style="color: var(--primary-light); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; transition: color 0.2s ease;">
+                            <i class="fas fa-arrow-left"></i> Voltar para a lista de NR's
+                        </a>
                     </div>
                 </div>
             </section>
@@ -276,15 +273,25 @@ document.addEventListener("DOMContentLoaded", () => {
     nrOrder.forEach((key) => {
       const nr = data[key];
       if (!nr) return;
+
+      const whatsappText = encodeURIComponent(
+        `Olá, gostaria de mais informações sobre o treinamento da NR ${nr.numero} - ${nr.titulo}`,
+      );
+      const whatsappUrl = `https://wa.me/5594991189447?text=${whatsappText}`;
+
       gridItems += `
-                <a href="nrs.html?nr=${nr.numero}" class="nr-grid-item">
-                    <div class="nr-grid-item__diamond">
-                        <div class="nr-grid-item__diamond-inner">
-                            <span>NR ${nr.numero}</span>
+                <div class="nr-grid-item">
+                    <a href="nrs.html?nr=${nr.numero}" class="nr-grid-item__link">
+                        <div class="nr-grid-item__image-container">
+                            <img src="img/nrs/NR-${nr.numero}.webp" alt="NR ${nr.numero} - ${nr.titulo}" class="nr-grid-item__image" loading="lazy">
                         </div>
+                    </a>
+                    <div class="nr-grid-item__actions">
+                        <a href="${whatsappUrl}" target="_blank" rel="noopener" class="nr-grid-item__contact-btn">
+                            Entre em Contato <i class="fab fa-whatsapp"></i>
+                        </a>
                     </div>
-                    <h3 class="nr-grid-item__title">${nr.titulo}</h3>
-                </a>
+                </div>
             `;
     });
 
